@@ -11,4 +11,5 @@ RSpec.describe Course, type: :model do
     it {should have_many(:students).through(:student_courses)}
   end
 
+#add testing for student_count
 end

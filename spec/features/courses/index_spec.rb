@@ -9,9 +9,9 @@ RSpec.describe "courses index page", type: :feature do
       course1 = Course.create!(name: "Defense Against the Dark Arts")
       course2 = Course.create!(name: "Potions")
 
-      studentcourses1 = StudentCourse.create!(course_id: course1.id, student_id: student1.id)
-      studentcourses2 = StudentCourse.create!(course_id: course2.id, student_id: student1.id)
-      studentcourses3 = StudentCourse.create!(course_id: course1.id, student_id: student2.id)
+      StudentCourse.create!(course_id: course1.id, student_id: student1.id)
+      StudentCourse.create!(course_id: course2.id, student_id: student1.id)
+      StudentCourse.create!(course_id: course1.id, student_id: student2.id)
       # studentcourses4 = StudentCourse.create!(course_id: course2.id, student_id: student2.id)
 
       visit '/courses'
